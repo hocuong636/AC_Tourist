@@ -1,12 +1,12 @@
         <!-- footer area start -->
-        <footer class="main-footer bgs-cover overlay rel z-1 pb-25" style="background-image: url(assets/images/backgrounds/footer.jpg);">
+        <footer class="main-footer bgs-cover overlay rel z-1 pb-25" style="background-image: url({{ asset('clients/assets/images/backgrounds/footer.jpg')}});">
             <div class="container">
                 <div class="footer-top pt-100 pb-30">
                     <div class="row justify-content-between">
                         <div class="col-xl-5 col-lg-6" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                             <div class="footer-widget footer-text">
                                 <div class="footer-logo mb-25">
-                                    <a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo"></a>
+                                    <a href="index.html"><img src="{{ asset('clients/assets/images/logos/logo-two.png')}}" alt="Logo"></a>
                                 </div>
                                 <p>We curate bespoke itineraries tailored to your preferences, ensuring every trip is seamless and enriching hidden gems beaten</p>
                                 <div class="social-style-one mt-15">
@@ -98,10 +98,10 @@
                                     <h5>Get In Touch</h5>
                                 </div>
                                 <ul class="list-style-one">
-                                    <li><i class="fal fa-map-marked-alt"></i> 578 Level, D-block 45 Street Melbourne, Australia</li>
-                                    <li><i class="fal fa-envelope"></i> <a href="mailto:supportrevelo@gmail.com">supportrevelo@gmail.com</a></li>
+                                    <li><i class="fal fa-map-marked-alt"></i> Hutech, Ditric 9,Ho Chi Minh City,Viet Nam</li>
+                                    <li><i class="fal fa-envelope"></i> <a href="mailto:duongnguyen280403@gmail.com">duongnguyen280403@gmail.com</a></li>
                                     <li><i class="fal fa-clock"></i> Mon - Fri, 08am - 05pm</li>
-                                    <li><i class="fal fa-phone-volume"></i> <a href="callto:+88012334588">+880 (123) 345 88</a></li>
+                                    <li><i class="fal fa-phone-volume"></i> <a href="callto:+84 0353704987">+84 0353704987</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -113,20 +113,20 @@
                     <div class="row">
                        <div class="col-lg-5">
                             <div class="copyright-text text-center text-lg-start">
-                                <p>@Copy 2024 <a href="index.html">Ravelo</a>, All rights reserved</p>
+                                <p>@Copy 2024 <a href="{{ route ('home') }}">ACCTourist</a>, All rights reserved</p>
                             </div>
                        </div>
                        <div class="col-lg-7 text-center text-lg-end">
                            <ul class="footer-bottom-nav">
-                               <li><a href="about.html">Terms</a></li>
-                               <li><a href="about.html">Privacy Policy</a></li>
-                               <li><a href="about.html">Legal notice</a></li>
-                               <li><a href="about.html">Accessibility</a></li>
+                               <li><a href="{{ asset('clients/about.html')}}">Terms</a></li>
+                               <li><a href="{{ asset('clients/about.html')}}">Privacy Policy</a></li>
+                               <li><a href="{{ asset('clients/about.html')}}">Accessibility</a></li>
+                               <li><a href="{{ asset('clients/about.html')}}">Legal notice</a></li>
                            </ul>
                        </div>
                     </div>
                     <!-- Scroll Top Button -->
-                    <button class="scroll-top scroll-to-target" data-target="html"><img src="assets/images/icons/scroll-up.png" alt="Scroll  Up"></button>
+                    <button class="scroll-top scroll-to-target" data-target="html"><img src="{{ asset('clients/assets/images/icons/scroll-up.png')}}" alt="Scroll  Up"></button>
                 </div>
             </div>
         </footer>

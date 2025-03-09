@@ -14,7 +14,7 @@ class Tourdetailcontroller extends Controller
      */
     public function index()
     {
-    return view("clients.tour-detail");
+    return view("clients.tours-detail");
     }
 
     /**
