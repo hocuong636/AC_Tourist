@@ -514,7 +514,7 @@
                 <div class="blog-item" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                     <div class="content">
                         <a href="blog.html" class="category">Travel</a>
-                        <h5><a href="blog-details.html">Ultimate Guide to Planning Your Dream Vacation with Ravelo Travel Agency</a></h5>
+                        <h5><a href="blog-details.html">Hướng dẫn cơ bản để lên kế hoạch cho kỳ nghỉ mơ ước của bạn với ACC TOURIST </a></h5>
                         <ul class="blog-meta">
                             <li><i class="far fa-calendar-alt"></i> <a href="#">25 February 2024</a></li>
                             <li><i class="far fa-comments"></i> <a href="#">Comments (5)</a></li>

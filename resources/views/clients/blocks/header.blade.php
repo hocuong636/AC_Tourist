@@ -74,7 +74,7 @@
                                             <ul>
                                                 <li><a href="{{ route('tours') }}">Tour</a></li>
                                                 <li><a href="{{ route('tours-guide') }}">Tour Guide</a></li>
-                                                <li><a href="{{ route('tour-detail') }}">Tour Detail</a></li>
+                                               
                                             </ul>
                                         </li>
                                         <li><a href="{{ route('Destination') }}">Destinations</a></li>
