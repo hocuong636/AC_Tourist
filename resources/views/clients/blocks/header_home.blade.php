@@ -69,13 +69,13 @@
 
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
-                                        <li class="current"><a href="{{ route('home') }}">Home</a></li>
-                                        <li><a href="{{ route('about') }}">About</a></li>
+                                        <li class="current"><a href="{{ route('home') }}">Trang chủ </a></li>
+                                        <li><a href="{{ route('about') }}">Giới thiệu </a></li>
                                         <li class="dropdown current"><a href="#">Tours</a>
                                             <ul>
                                                 <li><a href="{{ route('tours') }}">Tour</a></li>
-                                                <li><a href="{{ route('tours-guide') }}">Tour Guide</a></li>
-                                                <li><a href="{{ route('tour-detail') }}">Tour Detail</a></li>
+                                                <li><a href="{{ route('tours-guide') }}">Tours </a></li>
+                                                <li><a href="{{ route('tour-detail') }}">Hướng DaDa</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="{{ route('Destination') }}">Destinations</a></li>

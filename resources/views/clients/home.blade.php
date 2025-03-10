@@ -105,8 +105,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="section-title text-white text-center counter-text-wrap mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
-                    <h2>Discover the World's Treasures with Ravelo</h2>
-                    <p>One site <span class="count-text plus" data-speed="3000" data-stop="34500">0</span> most popular experience you’ll remember</p>
+                    <h2>Khám phá thế giới cùng ACCTourist</h2>
+                    <p>Website <span class="count-text plus" data-speed="3000" data-stop="34500">0</span> cho bạn trải nghiệm đáng nhớ nhất.</p>
                 </div>
             </div>
         </div>
@@ -144,24 +144,24 @@
                     <div class="section-title mb-25">
                         <h2>Travel with Confidence Top Reasons to Choose Our Agency</h2>
                     </div>
-                    <p>We go above and beyond to make your travel dreams reality hidden gems and must-see attractions</p>
-                    <div class="divider counter-text-wrap mt-45 mb-55"><span>We have <span><span class="count-text plus" data-speed="3000" data-stop="25">0</span> Years</span> of experience</span></div>
+                    <p>Chúng tôi luôn nỗ lực hết mình để biến giấc mơ du lịch của bạn thành hiện thực, những viên ngọc ẩn giấu và các điểm tham quan không thể bỏ qua</p>
+                    <div class="divider counter-text-wrap mt-45 mb-55"><span>Chúng tôi có <span><span class="count-text plus" data-speed="3000" data-stop="25">0</span> Năm</span> kinh nghiệm </span></div>
                     <div class="row">
                         <div class="col-6">
                             <div class="counter-item counter-text-wrap">
                                 <span class="count-text k-plus" data-speed="3000" data-stop="3">0</span>
-                                <span class="counter-title">Popular Destination</span>
+                                <span class="counter-title">Điểm đến nổi tiếng</span>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="counter-item counter-text-wrap">
                                 <span class="count-text m-plus" data-speed="3000" data-stop="9">0</span>
-                                <span class="counter-title">Satisfied Clients</span>
+                                <span class="counter-title">Khách hàng hài lòng</span>
                             </div>
                         </div>
                     </div>
                     <a href="destination1.html" class="theme-btn mt-10 style-two">
-                        <span data-hover="Explore Destinations">Explore Destinations</span>
+                        <span data-hover="Explore Destinations">Khám phá điểm đến </span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
                 </div>
@@ -190,8 +190,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-title text-center counter-text-wrap mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
-                        <h2>Explore Popular Destinations</h2>
-                        <p>One site <span class="count-text plus" data-speed="3000" data-stop="34500">0</span> most popular experience</p>
+                        <h2>Khám phá các điểm đến nổi tiếng</h2>
+                        <p>Website <span class="count-text plus" data-speed="3000" data-stop="34500">0</span> cho bạn trải nghiệm phổ biến nhất </p>
                     </div>
                 </div>
             </div>
@@ -302,9 +302,9 @@
                                 <img src="{{ asset('clients/assets/images/features/feature-author3.jpg')}}" alt="Author">
                                 <span>4k+</span>
                             </div>
-                            <h6>850K+ Happy Customer</h6>
-                            <div class="divider style-two counter-text-wrap my-25"><span><span class="count-text plus" data-speed="3000" data-stop="25">0</span> Years</span></div>
-                            <p>We pride ourselves offering personalized itineraries</p>
+                            <h6>850K+ Khách hàng hài lòng</h6>
+                            <div class="divider style-two counter-text-wrap my-25"><span><span class="count-text plus" data-speed="3000" data-stop="25">0</span> Năm </span></div>
+                            <p>Chúng tôi tự hào cung cấp hành trình được cá nhân hóa</p>
                         </div>
                     </div>
                 </div>
@@ -315,15 +315,15 @@
                         <div class="feature-item">
                             <div class="icon"><i class="flaticon-tent"></i></div>
                             <div class="content">
-                                <h5><a href="{{route('tour-detail')}}">Tent Camping</a></h5>
-                                <p>Tent camping is wonderful way to connect with nature</p>
+                                <h5><a href="{{route('tour-detail')}}">Cắm Trại </a></h5>
+                                <p>Cắm trại là cách tuyệt vời để kết nối với thiên nhiên</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="icon"><i class="flaticon-tent"></i></div>
                             <div class="content">
-                                <h5><a href="{{route('tour-detail')}}">Kayaking</a></h5>
-                                <p>Kayaking is a thrilling outdoor activity that adventure</p>
+                                <h5><a href="{{route('tour-detail')}}">Chèo thuyền kayak</a></h5>
+                                <p>Chèo thuyền kayak là một hoạt động ngoài trời ly kỳ phiêu lưu</p>
                             </div>
                         </div>
                     </div>
@@ -331,15 +331,15 @@
                         <div class="feature-item mt-20">
                             <div class="icon"><i class="flaticon-tent"></i></div>
                             <div class="content">
-                                <h5><a href="{{route('tour-detail')}}">Mountain Biking</a></h5>
-                                <p>Mountain biking is exhilarating sport that physical fitness</p>
+                                <h5><a href="{{route('tour-detail')}}">Leo Núi </a></h5>
+                                <p>Leo núi là môn thể thao mạo hiểm nhưng đầy sự kích thích</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="icon"><i class="flaticon-tent"></i></div>
                             <div class="content">
-                                <h5><a href="{{route('tour-detail')}}">Fishing & Boat</a></h5>
-                                <p>Fishing and boat bring joy quintessential activities that</p>
+                                <h5><a href="{{route('tour-detail')}}">Chèo thuyền và câu cá</a></h5>
+                                <p>Câu cá và thuyền mang lại niềm vui những hoạt động tinh túy</p>
                             </div>
                         </div>
                     </div>
@@ -363,9 +363,51 @@
                 <div class="col-lg-7">
                     <div class="testimonial-right-content" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
                         <div class="section-title mb-55">
-                            <h2><span>5280</span>  Global Clients Say About Us Services</h2>
+                            <h2><span>5280+</span>  Khách hàng toàn cầu nói về dịch vụ của chúng tôi</h2>
                         </div>
                         <div class="testimonials-active">
+                            <div class="testimonial-item">
+                                <div class="testi-header">
+                                    <div class="quote"><i class="flaticon-double-quotes"></i></div>
+                                    <h4>Dịch vụ chất lượng</h4>
+                                    <div class="ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="text">"Chuyến đi của chúng tôi hoàn toàn tuyệt vời, cảm ơn công ty du lịch ACCTourist!! Họ chăm sóc từng chi tiết, từ chỗ ở,sự an toàn ,thậm chí còn cho tôi những trải nghiệm đáng kinh ngạc "</div>
+                                <div class="author">
+                                    <div class="image"><img src="{{ asset('clients/assets/images/testimonials/author.jpg')}}" alt="Author"></div>
+                                    <div class="content">
+                                        <h5>Dương Trọng Tuấn Anh</h5>
+                                        <span>AI engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="testi-header">
+                                    <div class="quote"><i class="flaticon-double-quotes"></i></div>
+                                    <h4>Quality Services</h4>
+                                    <div class="ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="text">"Our trip was absolutely a perfect, thanks this travel agency! They took care of every detail, from to accommodations, and even suggested incredible experiences"</div>
+                                <div class="author">
+                                    <div class="image"><img src="{{ asset('clients/assets/images/testimonials/author.jpg')}}" alt="Author"></div>
+                                    <div class="content">
+                                        <h5>Randall V. Vasquez</h5>
+                                        <span>Graphics Designer</span>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="testimonial-item">
                                 <div class="testi-header">
                                     <div class="quote"><i class="flaticon-double-quotes"></i></div>
@@ -423,30 +465,30 @@
         <div class="row">
             <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-offset="50">
                 <div class="cta-item" style="background-image: url({{ asset('clients/assets/images/cta/cta1.jpg')}});">
-                    <span class="category">Tent Camping</span>
-                    <h2>Explore the world best tourism</h2>
+                    <span class="category">Cắm trại </span>
+                    <h2>Khám phá du lịch tốt nhất</h2>
                     <a href="{{route('tours')}}" class="theme-btn style-two bgc-secondary">
-                        <span data-hover="Explore Tours">Explore Tours</span>
+                        <span data-hover="Explore Tours">Khám phá ngay!</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1500" data-aos-offset="50">
                 <div class="cta-item" style="background-image: url({{ asset('clients/assets/images/cta/cta2.jpg')}});">
-                    <span class="category">Sea Beach</span>
-                    <h2>World largest Sea Beach in Thailand</h2>
+                    <span class="category">Bãi biển </span>
+                    <h2>khám phá các bãi biển đẹp nhất thế giới</h2>
                     <a href="{{route('tours')}}" class="theme-btn style-two">
-                        <span data-hover="Explore Tours">Explore Tours</span>
+                        <span data-hover="Explore Tours">Khám phá ngay!</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1500" data-aos-offset="50">
                 <div class="cta-item" style="background-image: url({{ asset('clients/assets/images/cta/cta3.jpg')}});">
-                    <span class="category">Water Falls</span>
-                    <h2>Largest Water falls Bali, Indonesia</h2>
+                    <span class="category">Thác nước hùng vĩ</span>
+                    <h2>Thác nước lớn nhấtnhất Bali, Indonesia</h2>
                     <a href="{{route('tours')}}" class="theme-btn style-two bgc-secondary">
-                        <span data-hover="Explore Tours">Explore Tours</span>
+                        <span data-hover="Explore Tours">Khám phá ngay!</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
                 </div>
