@@ -14,6 +14,9 @@ use App\Http\Controllers\clients\Bookingcontroller;
 use App\Http\Controllers\clients\Faqscontroller;
 use App\Http\Controllers\clients\Blogscontroller;
 use App\Http\Controllers\clients\BlogsDetailcontroller;
+use App\Http\Controllers\clients\Logincontroller;
+use Illuminate\Auth\Events\Login;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,4 +40,5 @@ Route::get('/booking', [Bookingcontroller::class, 'index'])->name('booking');
 Route::get('/faqs', [Faqscontroller::class, 'index'])->name('faqs');
 Route::get('/blogs', [Blogscontroller::class, 'index'])->name('blogs');
 Route::get('/blogs_detail', [BlogsDetailcontroller::class, 'index'])->name('blogs-detail');
+Route::get('/login', [Logincontroller::class, 'index'])->name('login');
 

@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="{{asset('clients/assets/css/slick.min.css')}}">
     <!-- Main Style -->
     <link rel="stylesheet" href="{{asset('clients/assets/css/style.css')}}">
-    
-</head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head> 
 <body>
     <div class="page-wrapper">
 
@@ -115,9 +115,7 @@
                             <!-- menu sidbar -->
                             <div class="menu-sidebar">
                                 <button class="bg-transparent">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
+                                    <i class='bx bxs-user' style="font-size: 38px; color: white;"></i>
                                 </button>
                             </div>
                         </div>

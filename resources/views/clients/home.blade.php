@@ -105,8 +105,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="section-title text-white text-center counter-text-wrap mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
-                    <h2>Khám phá thế giới cùng ACCTourist</h2>
-                    <p>Website <span class="count-text plus" data-speed="3000" data-stop="34500">0</span> cho bạn trải nghiệm đáng nhớ nhất.</p>
+                    <h2 class="text-white">Khám phá thế giới cùng ACCTourist</h2>
+                    <p class="text-white">Website <span class="count-text plus text-white" data-speed="3000" data-stop="34500">0</span> cho bạn trải nghiệm đáng nhớ nhất.</p>
                 </div>
             </div>
         </div>
@@ -189,9 +189,9 @@
         <div class="popular-destinations-wrap br-20 bgc-lighter pt-100 pb-70">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div class="section-title text-center counter-text-wrap mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
-                        <h2>Khám phá các điểm đến nổi tiếng</h2>
-                        <p>Website <span class="count-text plus" data-speed="3000" data-stop="34500">0</span> cho bạn trải nghiệm phổ biến nhất </p>
+                    <div class="section-title text-dark text-center counter-text-wrap mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                        <h2 class="text-dark">Khám phá các điểm đến nổi tiếng</h2>
+                        <p class="text-dark">Website <span class="count-text plus text-dark" data-speed="3000" data-stop="34500">0</span> cho bạn trải nghiệm phổ biến nhất </p>
                     </div>
                 </div>
             </div>
@@ -505,7 +505,7 @@
             <div class="col-lg-12">
                 <div class="section-title text-center counter-text-wrap mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                     <h2>Read Latest News & Blog</h2>
-                    <p>One site <span class="count-text plus bgc-primary" data-speed="3000" data-stop="34500">0</span> most popular experience you’ll remember</p>
+                    <p>One site <span class="count-text plus bgc-primary" data-speed="3000" data-stop="34500">0</span> most popular experience you'll remember</p>
                 </div>
             </div>
         </div>
@@ -513,17 +513,17 @@
             <div class="col-xl-4 col-md-6">
                 <div class="blog-item" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                     <div class="content">
-                        <a href="blog.html" class="category">Travel</a>
-                        <h5><a href="blog-details.html">Hướng dẫn cơ bản để lên kế hoạch cho kỳ nghỉ mơ ước của bạn với ACC TOURIST </a></h5>
+                        <a href="{{ route('blogs') }}" class="category">Travel</a>
+                        <h5><a href="{{ route('blogs') }}">Hướng dẫn cơ bản để lên kế hoạch cho kỳ nghỉ mơ ước của bạn với ACC TOURIST </a></h5>
                         <ul class="blog-meta">
                             <li><i class="far fa-calendar-alt"></i> <a href="#">25 February 2024</a></li>
                             <li><i class="far fa-comments"></i> <a href="#">Comments (5)</a></li>
                         </ul>
                     </div>
                     <div class="image">
-                        <img src="assets/images/blog/blog1.jpg" alt="Blog">
+                        <img src="{{ asset('clients/assets/images/blog/blog1.jpg')}}" alt="Blog">
                     </div>
-                    <a href="blog-details.html" class="theme-btn">
+                    <a href="{{ route('blogs') }}" class="theme-btn">
                         <span data-hover="Book Now">Read More</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
@@ -532,17 +532,17 @@
             <div class="col-xl-4 col-md-6">
                 <div class="blog-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500" data-aos-offset="50">
                     <div class="content">
-                        <a href="blog.html" class="category">Travel</a>
-                        <h5><a href="blog-details.html">Unforgettable Adventures Travel Agency Bucket List Experiences</a></h5>
+                        <a href="{{ route('blogs') }}" class="category">Travel</a>
+                        <h5><a href="{{ route('blogs') }}">Unforgettable Adventures Travel Agency Bucket List Experiences</a></h5>
                         <ul class="blog-meta">
                             <li><i class="far fa-calendar-alt"></i> <a href="#">25 February 2024</a></li>
                             <li><i class="far fa-comments"></i> <a href="#">Comments (5)</a></li>
                         </ul>
                     </div>
                     <div class="image">
-                        <img src="assets/images/blog/blog2.jpg" alt="Blog">
+                        <img src="{{ asset('clients/assets/images/blog/blog2.jpg')}}" alt="Blog">
                     </div>
-                    <a href="blog-details.html" class="theme-btn">
+                    <a href="{{ route('blogs') }}" class="theme-btn">
                         <span data-hover="Book Now">Read More</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
@@ -551,17 +551,17 @@
             <div class="col-xl-4 col-md-6">
                 <div class="blog-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500" data-aos-offset="50">
                     <div class="content">
-                        <a href="blog.html" class="category">Travel</a>
-                        <h5><a href="blog-details.html">Exploring Culture and way Cuisine Travel Agency's they Best Foodie Destinations</a></h5>
+                        <a href="{{ route('blogs') }}" class="category">Travel</a>
+                        <h5><a href="{{ route('blogs') }}">Exploring Culture and way Cuisine Travel Agency's they Best Foodie Destinations</a></h5>
                         <ul class="blog-meta">
                             <li><i class="far fa-calendar-alt"></i> <a href="#">25 February 2024</a></li>
                             <li><i class="far fa-comments"></i> <a href="#">Comments (5)</a></li>
                         </ul>
                     </div>
                     <div class="image">
-                        <img src="assets/images/blog/blog3.jpg" alt="Blog">
+                        <img src="{{ asset('clients/assets/images/blog/blog3.jpg') }}" alt="Blog">
                     </div>
-                    <a href="blog-details.html" class="theme-btn">
+                    <a href="{{ route('blogs') }}" class="theme-btn">
                         <span data-hover="Book Now">Read More</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
@@ -572,4 +572,4 @@
 </section>
 <!-- Blog Area end -->
 
-@include('clients.blocks.footer')
+@include('clients.blocks.footer_home')

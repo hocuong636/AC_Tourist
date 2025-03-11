@@ -31,7 +31,10 @@
     <link rel="stylesheet" href="{{ asset('clients/assets/css/slick.min.css') }}">
     <!-- Main Style -->
     <link rel="stylesheet" href="{{ asset('clients/assets/css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="{{ asset('clients/assets/css/css-login/fonts/material-icon/css/material-design-iconic-font.min.css')}}"  <!-- Main css -->
+    <link rel="stylesheet" href="{{ asset('clients/assets/css/css-login/style.css')}}">
 </head>
 
 <body>
@@ -100,16 +103,14 @@
 
                         <!-- Menu Button -->
                         <div class="menu-btns py-10">
-                            <a href="contact.html" class="theme-btn style-two bgc-secondary">
+                            <a href="{{ route('tours') }}" class="theme-btn style-two bgc-secondary">
                                 <span data-hover="Đặt ngay">Đặt ngay</span>
                                 <i class="fal fa-arrow-right"></i>
                             </a>
                             <!-- menu sidbar -->
                             <div class="menu-sidebar">
                                 <button class="bg-transparent">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
+                                    <i class='bx bxs-user' style="font-size: 38px; color: white;"></i>
                                 </button>
                             </div>
                         </div>
