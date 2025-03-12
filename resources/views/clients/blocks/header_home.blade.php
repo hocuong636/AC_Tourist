@@ -116,6 +116,23 @@
                 </div>
             </div>
             <!--End Header Upper-->
+             <!-- Hidden Sidebar -->
+<section class="hidden-bar">
+    <div class="inner-box text-center">
+        <div class="cross-icon"><span class="fa fa-times"></span></div>
+        <div class="title">
+            <h4>TÀI KHOẢN</h4>
+        </div>
+        <div class="user-menu" style="font-size:30px;" >
+             <ul>
+                <li><a href="{{ route('login') }}"><i class="bx bx-log-in"></i> Đăng nhập</a></li>
+                <li><a href="{{ route('register') }} "><i class="bx bx-user-plus"></i> Đăng ký</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+<!--End Hidden Sidebar -->
         </header>
     </div>
 </body>
