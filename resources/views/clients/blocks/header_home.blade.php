@@ -33,8 +33,6 @@
     <link rel="stylesheet" href="{{ asset('clients/assets/css/style.css') }}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="{{ asset('clients/assets/css/css-login/fonts/material-icon/css/material-design-iconic-font.min.css')}}"  <!-- Main css -->
-    <link rel="stylesheet" href="{{ asset('clients/assets/css/css-login/style.css')}}">
 </head>
 
 <body>

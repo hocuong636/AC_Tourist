@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Đăng ký</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,26 +23,46 @@
         <div class="hidden md:block w-full md:w-1/2 bg-indigo-50 p-8 relative">
             <div class="absolute inset-0 flex items-center justify-center p-6">
                 <div class="max-w-sm text-center">
-                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Chào mừng trở lại</h2>
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Tham gia cùng chúng tôi</h2>
                     <p class="text-gray-600 mb-6">
-                        Đăng nhập vào tài khoản của bạn và tiếp tục hành trình với chúng tôi
+                        Tạo tài khoản để bắt đầu hành trình của bạn
                     </p>
-                    <img src="{{ asset('clients/assets/images/login-illustration.svg') }}" alt="Login illustration" class="mx-auto max-w-full h-auto">
+                    <img src="{{ asset('clients/assets/images/register-illustration.svg') }}" alt="Register illustration" class="mx-auto max-w-full h-auto">
                 </div>
             </div>
         </div>
         
-        <!-- Right side - Login form -->
+        <!-- Right side - Register form -->
         <div class="w-full md:w-1/2 p-8">
             <div class="mb-8 text-center">
-                <h1 class="text-2xl font-bold text-gray-800">Đăng nhập</h1>
+                <h1 class="text-2xl font-bold text-gray-800">Đăng ký tài khoản</h1>
                 <p class="text-sm text-gray-600 mt-2">
-                    Nhập thông tin đăng nhập của bạn để tiếp tục
+                    Nhập thông tin của bạn để tạo tài khoản
                 </p>
             </div>
             
-            <form method="POST" action="{{ route('login') }}" class="space-y-6">
+            <form method="POST" action="{{ route('register') }}" class="space-y-5">
                 @csrf
+                
+                <!-- Name input -->
+                <div class="relative">
+                    <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Họ và tên" 
+                        class="form-input w-full px-10 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                        value="{{ old('name') }}" 
+                        required 
+                        autofocus
+                    >
+                    @error('name')
+                        <span class="text-red-500 text-sm mt-1 block">{{ $message }}</span>
+                    @enderror
+                </div>
                 
                 <!-- Email input -->
                 <div class="relative">
@@ -56,8 +76,7 @@
                         placeholder="Email" 
                         class="form-input w-full px-10 py-3 border border-gray-300 rounded-lg focus:outline-none"
                         value="{{ old('email') }}" 
-                        required 
-                        autofocus
+                        required
                     >
                     @error('email')
                         <span class="text-red-500 text-sm mt-1 block">{{ $message }}</span>
@@ -79,7 +98,7 @@
                     >
                     <button 
                         type="button"
-                        onclick="togglePassword()"
+                        onclick="togglePassword('password', 'toggleIcon')"
                         class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
                     >
                         <i class="fa-regular fa-eye" id="toggleIcon"></i>
@@ -89,34 +108,50 @@
                     @enderror
                 </div>
                 
-                <!-- Remember me & Forgot password -->
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <input 
-                            type="checkbox" 
-                            name="remember" 
-                            id="remember" 
-                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
-                            {{ old('remember') ? 'checked' : '' }}
-                        >
-                        <label for="remember" class="ml-2 text-sm text-gray-600 cursor-pointer">
-                            Ghi nhớ đăng nhập
-                        </label>
+                <!-- Confirm Password input -->
+                <div class="relative">
+                    <div class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                        <i class="fa-solid fa-lock"></i>
                     </div>
-                    
-                    @if (Route::has('password.request'))
-                        <a href="{{ route('password.request') }}" class="text-sm text-indigo-600 hover:underline">
-                            Quên mật khẩu?
-                        </a>
-                    @endif
+                    <input 
+                        type="password" 
+                        name="password_confirmation" 
+                        id="password_confirmation" 
+                        placeholder="Xác nhận mật khẩu" 
+                        class="form-input w-full px-10 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                        required
+                    >
+                    <button 
+                        type="button"
+                        onclick="togglePassword('password_confirmation', 'toggleIconConfirm')"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+                    >
+                        <i class="fa-regular fa-eye" id="toggleIconConfirm"></i>
+                    </button>
                 </div>
                 
-                <!-- Login button -->
+                <!-- Terms and conditions -->
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input 
+                            type="checkbox" 
+                            name="terms" 
+                            id="terms" 
+                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                            required
+                        >
+                    </div>
+                    <label for="terms" class="ml-2 text-sm text-gray-600">
+                        Tôi đồng ý với <a href="#" class="text-indigo-600 hover:underline">Điều khoản dịch vụ</a> và <a href="#" class="text-indigo-600 hover:underline">Chính sách bảo mật</a>
+                    </label>
+                </div>
+                
+                <!-- Register button -->
                 <button 
                     type="submit" 
                     class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition duration-200"
                 >
-                    Đăng nhập
+                    Đăng ký
                 </button>
                 
                 <!-- Divider -->
@@ -126,7 +161,7 @@
                     </div>
                     <div class="relative flex justify-center text-xs uppercase">
                         <span class="bg-white px-2 text-gray-500">
-                            Hoặc đăng nhập với
+                            Hoặc đăng ký với
                         </span>
                     </div>
                 </div>
@@ -143,23 +178,21 @@
                     </a>
                 </div>
                 
-                <!-- Register link -->
-                @if (Route::has('register'))
-                    <div class="text-center mt-6">
-                        <span class="text-sm text-gray-600">Chưa có tài khoản? </span>
-                        <a href="{{ route('register') }}" class="text-sm text-indigo-600 hover:underline font-medium">
-                            Đăng ký ngay
-                        </a>
-                    </div>
-                @endif
+                <!-- Login link -->
+                <div class="text-center mt-6">
+                    <span class="text-sm text-gray-600">Đã có tài khoản? </span>
+                    <a href="{{ route('login') }}" class="text-sm text-indigo-600 hover:underline font-medium">
+                        Đăng nhập
+                    </a>
+                </div>
             </form>
         </div>
     </div>
     
     <script>
-        function togglePassword() {
-            const passwordInput = document.getElementById('password');
-            const toggleIcon = document.getElementById('toggleIcon');
+        function togglePassword(inputId, iconId) {
+            const passwordInput = document.getElementById(inputId);
+            const toggleIcon = document.getElementById(iconId);
             
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';

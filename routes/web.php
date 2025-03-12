@@ -15,7 +15,7 @@ use App\Http\Controllers\clients\Faqscontroller;
 use App\Http\Controllers\clients\Blogscontroller;
 use App\Http\Controllers\clients\BlogsDetailcontroller;
 use App\Http\Controllers\clients\Logincontroller;
-use Illuminate\Auth\Events\Login;
+use App\Http\Controllers\clients\Registercontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +41,5 @@ Route::get('/faqs', [Faqscontroller::class, 'index'])->name('faqs');
 Route::get('/blogs', [Blogscontroller::class, 'index'])->name('blogs');
 Route::get('/blogs_detail', [BlogsDetailcontroller::class, 'index'])->name('blogs-detail');
 Route::get('/login', [Logincontroller::class, 'index'])->name('login');
+Route::get('/register', [Registercontroller::class, 'index'])->name('register');
 
