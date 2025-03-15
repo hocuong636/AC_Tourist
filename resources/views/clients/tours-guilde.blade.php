@@ -1,4 +1,34 @@
 @include('clients.blocks.header_home')
+<section class="hidden-bar">
+    <div class="inner-box text-center">
+        <div class="cross-icon"><span class="fa fa-times"></span></div>
+        <div class="title">
+            <h4>TÀI KHOẢN</h4>
+        </div>
+        <div class="user-menu">
+            <ul>
+                <li><a href="{{ route('login') }}"><i class="bx bx-log-in"></i> Đăng nhập</a></li>
+                <li><a href="{{ route('register') }}"><i class="bx bx-user-plus"></i> Đăng ký</a></li>
+            </ul>
+        </div>
+        
+        <div class="contact-info mt-5">
+            <h5 class="mb-3">Thông tin liên hệ</h5>
+            <ul class="list-style-one">
+                <li><i class="fal fa-map-marker-alt"></i> 475A Điện Biên Phủ, Phường 25, Bình Thạnh, TP.HCM</li>
+                <li><i class="fal fa-envelope"></i> <a href="mailto:duongnguyen280403@gmail.com">duongnguyen280403@gmail</a></li>
+                <li><i class="fal fa-phone"></i> <a href="tel:+84353704987">+84 353 704 987</a></li>
+            </ul>
+        </div>
+        
+        <div class="social-links mt-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</section>
 @include('clients.blocks.banner')
 <!-- Khu vực Lợi ích bắt đầu -->
 <section class="benefit-area mt-100 rel z-1">

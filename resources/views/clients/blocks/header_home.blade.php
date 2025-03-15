@@ -32,7 +32,7 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="{{ asset('clients/assets/css/style.css') }}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="{{ asset('clients/assets/css/custom-css.css') }}">
 </head>
 
 <body>
@@ -76,13 +76,20 @@
 
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
-                                        <li class="current"><a href="{{ route('home') }}">Trang chủ </a></li>
-                                        <li><a href="{{ route('about') }}">Giới thiệu </a></li>
-                                        <li><a href="{{ route('tours') }}">Tours </a></li>
-                                        <li><a href="{{ route('tours-guide') }}">Hướng dẫn viên </a></li>
-                                        <li><a href="{{ route('Destination') }}">Điểm đến </a></li>
-                                        <li><a href="{{ route('contact') }}">Liên Hệ </a></li>
-                                        <li><a href="{{ route('blogs') }}">Blogs</a></li>
+                                        <li class="{{ Request::url() == route('home') ? 'active' : '' }}"><a
+                                                href="{{ route('home') }}">Trang chủ </a></li>
+                                        <li class="{{ Request::url() == route('about') ? 'active' : '' }}"><a
+                                                href="{{ route('about') }}">Giới thiệu </a></li>
+                                        <li class="{{ Request::url() == route('tours') ? 'active' : '' }}"><a
+                                                href="{{ route('tours') }}">Tours </a></li>
+                                        <li class="{{ Request::url() == route('tours-guide') ? 'active' : '' }}"><a
+                                                href="{{ route('tours-guide') }}">Hướng dẫn viên </a></li>
+                                        <li class="{{ Request::url() == route('Destination') ? 'active' : '' }}"><a
+                                                href="{{ route('Destination') }}">Điểm đến </a></li>
+                                        <li class="{{ Request::url() == route('contact') ? 'active' : '' }}"><a
+                                                href="{{ route('contact') }}">Liên Hệ </a></li>
+                                        <li class="{{ Request::url() == route('blogs') ? 'active' : '' }}"><a
+                                                href="{{ route('blogs') }}">Blogs</a></li>
                                     </ul>
                                 </div>
 
@@ -116,23 +123,40 @@
                 </div>
             </div>
             <!--End Header Upper-->
-             <!-- Hidden Sidebar -->
-<section class="hidden-bar">
-    <div class="inner-box text-center">
-        <div class="cross-icon"><span class="fa fa-times"></span></div>
-        <div class="title">
-            <h4>TÀI KHOẢN</h4>
-        </div>
-        <div class="user-menu" style="font-size:30px;" >
-             <ul>
-                <li><a href="{{ route('login') }}"><i class="bx bx-log-in"></i> Đăng nhập</a></li>
-                <li><a href="{{ route('register') }} "><i class="bx bx-user-plus"></i> Đăng ký</a></li>
-            </ul>
-        </div>
-        
-    </div>
-</section>
-<!--End Hidden Sidebar -->
+            <!-- Hidden Sidebar -->
+            <section class="hidden-bar">
+                <div class="inner-box text-center">
+                    <div class="cross-icon"><span class="fa fa-times"></span></div>
+                    <div class="title">
+                        <h4>TÀI KHOẢN</h4>
+                    </div>
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="{{ route('login') }}"><i class="bx bx-log-in"></i> Đăng nhập</a></li>
+                            <li><a href="{{ route('register') }}"><i class="bx bx-user-plus"></i> Đăng ký</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info mt-5">
+                        <h5 class="mb-3">Thông tin liên hệ</h5>
+                        <ul class="list-style-one">
+                            <li><i class="fal fa-map-marker-alt"></i> 475A Điện Biên Phủ, Phường 25, Bình Thạnh, TP.HCM
+                            </li>
+                            <li><i class="fal fa-envelope"></i> <a
+                                    href="mailto:duongnguyen280403@gmail.com">duongnguyen280403@gmail</a></li>
+                            <li><i class="fal fa-phone"></i> <a href="tel:+84353704987">+84 353 704 987</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--End Hidden Sidebar -->
         </header>
     </div>
 </body>

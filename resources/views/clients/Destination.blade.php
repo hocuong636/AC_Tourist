@@ -1,5 +1,5 @@
 @include('clients.blocks.header_home')
-@include('clients.blocks.banner_search')
+@include('clients.blocks.banner')
 
 <!-- Khu vực Điểm đến Phổ biến bắt đầu -->
 <section class="popular-destinations-area pt-100 pb-90 rel z-1">

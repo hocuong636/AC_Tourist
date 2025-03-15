@@ -1,5 +1,5 @@
 @include('clients.blocks.header_home')
-@include('clients.blocks.banner_search')
+@include('clients.blocks.banner')
 
         <!-- Tour Grid Area start -->
         <section class="tour-grid-page py-100 rel z-1">
